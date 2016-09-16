@@ -26,4 +26,7 @@ ul{
   color: #483D8B;
 
 }
-footer{}
+footer{
+  font-style: italic;
+  font-size: 10px;
+}

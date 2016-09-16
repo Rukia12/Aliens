@@ -20,7 +20,7 @@ if (questionTwo === 'yes' || questionTwo ==='y') {
   alert('Actually, I got 10 extra toes!');
 }
 
-var questionThree = prompt('Do I like swimming?'.toLowerCase();
+var questionThree = prompt('Do I like swimming?').toLowerCase();
 
 if (questionThree === 'yes' || questionThree ==='y') {
   alert('Nope, I will start melting if I touch water!');
@@ -44,4 +44,17 @@ if (questionFive === 'yes' || questionFive ==='y') {
 
 } else if (questionFive === 'no' || questionFive ==='n'){
   alert('That\'s right. I don\'t have a spaceship the mothership left me!' );
+}
+
+var questionSix = prompt("What do you think aliens like to drink?").toLowerCase();
+
+var answerSix = ['coffee','milkshake'];
+
+if (questionSix === 'coffee') {
+  console.log('caffeine addict');
+  alert('I love Americano\'s');
+
+} else if (questionSix ==='milkshake') {
+  console.log('Bubble Guts');
+  alert('Aliens are lactose intolerant!');
 }
