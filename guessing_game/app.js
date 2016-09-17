@@ -1,8 +1,7 @@
 var userName = prompt("What's your name?");
 alert('Welcome to my site  '+ userName);
 
-var questionOne = prompt('Was I born in the U.S.?');
-questionOne = questionOne.toLowerCase();
+var questionOne = prompt('Was I born in the U.S.?').toLowerCase();
 
 if (questionOne === 'yes' || questionOne ==='y') {
   alert('Nope, I\'m an alien from Mars!');
@@ -50,11 +49,11 @@ var questionSix = prompt("What do you think aliens like to drink?").toLowerCase(
 
 var answerSix = ['coffee','milkshake'];
 
-if (questionSix === 'coffee') {
-  console.log('caffeine addict');
-  alert('I love Americano\'s');
+if (answerSix.indexOf(questionSix)===-1) {
+  console.log('not the right answer');
+  alert('not the right answer');
 
-} else if (questionSix ==='milkshake') {
-  console.log('Bubble Guts');
-  alert('Aliens are lactose intolerant!');
+} else {
+  console.log('right answer');
+  alert('Roger loves coffee, and milkshake on a hot day');
 }
