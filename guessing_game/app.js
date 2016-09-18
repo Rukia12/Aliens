@@ -59,3 +59,12 @@ if (answerSix.indexOf(questionSix) === -1) {
   console.log('right answer');
   alert('Roger loves coffee, and milkshake on a hot day');
 }
+
+var alienYears = 136;
+var questionSeven = parseInt(prompt('Can you guess how old I am in Alien years?'));
+
+if (questionSeven === alienYears) {
+  alert('Thanks, I just had botox done');
+} else if (questionSeven !== alienYears) {
+  alert('I am 136 Alien years old');
+}
