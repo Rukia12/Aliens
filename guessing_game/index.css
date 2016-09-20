@@ -24,14 +24,24 @@ h2 {
   color: #000080;
   background-color: #483D8B;
 }
-
+.column1of2 {
+  float: left;
+  width: 620px;
+  margin: 10px;
+}
 img {
   border: 3px dashed #000000;
   align-content: center;
   border-radius: 50%;
 }
 
-p{
+.column2of2 {
+  float: left;
+  width: 300px;
+  margin: 10px;
+}
+
+p {
   display: block;
   font-size: 12px;
   font-family: monospace, arial;
