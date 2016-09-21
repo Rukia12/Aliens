@@ -3,7 +3,6 @@
 var yesNo = ['yes', 'y', 'no', 'n'];
 var questions = ['What\'s your name?', 'Was I born in the U.S.?', 'Do I have 10 toes?', 'Do I like swimming?',
 'Do I like running?', 'Is the color of my spaceship silver?'];
-var correctAns = [];
 
 askName();
 question1();
@@ -31,25 +30,25 @@ function question1() {
 
 function question2() {
   var questionTwo = prompt(questions[2]).toLowerCase();
-  if (questionTwo === yesNo[0]) ||| questionTwo === yesNo[1]) {
+  if (questionTwo === yesNo[0] || questionTwo === yesNo[1]) {
     alert('You got it!');
-  } else if (questionTwo === yesNo[2] || questionTwo === yesNo[3]){
+  } else if (questionTwo === yesNo[2] || questionTwo === yesNo[3]) {
     alert('Actually, I got 10 extra toes!');
   }
 }
 
 function question3() {
   var questionThree = prompt(questions[3]).toLowerCase();
-  if (questionThree === 'yes' || questionThree === 'y') {
+  if (questionThree === yesNo[0] || questionThree === yesNo[1]) {
     alert('Nope, I will start melting if I touch water!');
-  } else if (questionThree === yesNo[2] || questionThree === yesNo[3]){
+  } else if (questionThree === yesNo[2] || questionThree === yesNo[3]) {
     alert('That\'s right! I don\'t like water in my ears and nose!');
   }
 }
 
 function question4() {
   var questionFour = prompt(questions[4]).toLowerCase();
-  if (questionFour === yesNo[0]) ||| questionFour === yesNo[1]) {
+  if (questionFour === yesNo[0] || questionFour === yesNo[1]) {
     alert('I have a jet pack so I can fly!');
   } else if (questionFour === yesNo[2] || questionFour === yesNo[3]) {
     alert('Not true, I believe I can fly, I believe I can touch the sky!');
@@ -58,10 +57,10 @@ function question4() {
 
 function question5() {
   var questionFive = prompt (questions[5]).toLowerCase();
-  if (questionFive === yesNo[0]) ||| questionFive === yesNo[1]) {
+  if (questionFive === yesNo[0] || questionFive === yesNo[1]) {
     alert('My spaceship is Hot Pink!');
-  } else if (questionFive === yesNo[2] || questionFive === yesNo[3]){
-    alert('That\'s right. I don\'t have a spaceship the mothership left me!' );
+  } else if (questionFive === yesNo[2] || questionFive === yesNo[3]) {
+    alert('That\'s right. I don\'t have a spaceship the mothership left me!');
   }
 }
 
