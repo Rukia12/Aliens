@@ -1,5 +1,10 @@
 'use strict';
 
+var yesNo = ['yes', 'y', 'no', 'n'];
+var questions = ['What\'s your name?', 'Was I born in the U.S.?', 'Do I have 10 toes?', 'Do I like swimming?',
+'Do I like running?', 'Is the color of my spaceship silver?'];
+var correctAns = [];
+
 askName();
 question1();
 question2();
@@ -10,51 +15,52 @@ question6();
 question7();
 
 function askName() {
-  var userName = prompt('What\'s your name?');
+  var userName = prompt(questions[0]).toLowerCase();
   alert('Welcome to my site  ' + userName);
 }
 
 function question1() {
-  var questionOne = prompt('Was I born in the U.S.?').toLowerCase();
-  if (questionOne === 'yes' || questionOne === 'y') {
-    alert('Nope, I\'m an alien from Mars!');
-  } else if (questionOne === 'no' || questionOne === 'n') {
+  var questionOne = prompt(questions[1]).toLowerCase();
+  if (questionOne === yesNo[2] || questionOne === yesNo[3]) {
     alert('Yes,I\'m from outerspace!');
+  }
+  else if (questionOne === yesNo[0] || questionOne === yesNo[1]) {
+    alert('Nope, I\'m an alien from Mars!');
   }
 }
 
 function question2() {
-  var questionTwo = prompt('Do I have 10 toes?').toLowerCase();
-  if (questionTwo === 'yes' || questionTwo === 'y') {
+  var questionTwo = prompt(questions[2]).toLowerCase();
+  if (questionTwo === yesNo[0]) ||| questionTwo === yesNo[1]) {
     alert('You got it!');
-  } else if (questionTwo === 'no' || questionTwo === 'n'){
+  } else if (questionTwo === yesNo[2] || questionTwo === yesNo[3]){
     alert('Actually, I got 10 extra toes!');
   }
 }
 
 function question3() {
-  var questionThree = prompt('Do I like swimming?').toLowerCase();
+  var questionThree = prompt(questions[3]).toLowerCase();
   if (questionThree === 'yes' || questionThree === 'y') {
     alert('Nope, I will start melting if I touch water!');
-  } else if (questionThree === 'no' || questionThree === 'n'){
+  } else if (questionThree === yesNo[2] || questionThree === yesNo[3]){
     alert('That\'s right! I don\'t like water in my ears and nose!');
   }
 }
 
 function question4() {
-  var questionFour = prompt('Do I like running?').toLowerCase();
-  if (questionFour === 'yes' || questionFour === 'y') {
+  var questionFour = prompt(questions[4]).toLowerCase();
+  if (questionFour === yesNo[0]) ||| questionFour === yesNo[1]) {
     alert('I have a jet pack so I can fly!');
-  } else if (questionFour === 'no' || questionFour === 'n'){
+  } else if (questionFour === yesNo[2] || questionFour === yesNo[3]) {
     alert('Not true, I believe I can fly, I believe I can touch the sky!');
   }
 }
 
 function question5() {
-  var questionFive = prompt ('Is the color of my spaceship silver?');
-  if (questionFive === 'yes' || questionFive === 'y') {
+  var questionFive = prompt (questions[5]).toLowerCase();
+  if (questionFive === yesNo[0]) ||| questionFive === yesNo[1]) {
     alert('My spaceship is Hot Pink!');
-  } else if (questionFive === 'no' || questionFive === 'n'){
+  } else if (questionFive === yesNo[2] || questionFive === yesNo[3]){
     alert('That\'s right. I don\'t have a spaceship the mothership left me!' );
   }
 }
