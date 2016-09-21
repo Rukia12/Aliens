@@ -25,7 +25,7 @@ h2 {
   background-color: #483D8B;
 }
 .column1of2 {
-  float: left;
+  float: right;
   width: 500px;
   margin: 10px;
 }
